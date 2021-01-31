@@ -9,10 +9,68 @@
     
     <body>
         <h1>Notes</h1>
-        <h2>Topic Title</h2>
-        <p>
-            This is where the reading notes will go.
-        </p>
+        <h2>Ch2: Programming Basics </h2>
+        <div>
+            <li>You can make single line comments with "//",
+                or you can create paragraph comments with "/* */".
+            </li>
+            <li>Each statment is compleated either by a new line
+                or a ";" at the end. You can even have two statments
+                on the same line when the ";" is used.
+            </li>
+            <li>Variables are deturmend by three key words:
+                <ol type="1">
+                    <li>var makes a global variable.</li>
+                    <li>const prevents the variable from ever being changed.</li>
+                    <li>let creates a variable that is only accessable withen
+                        its block.
+                    </li>
+                </ol>
+            </li>
+            <li>In strings, use "\" to include symbols are create commands.</li>
+        </div>
+        <h2>Ch3: Arrays, Logic, and Loops</h2>
+        <div>
+            <li>Arrays names are created the same way as variables but are set
+                equal to "[]".
+                <ol type="1">
+                    <li>To add to a list, you just place the number position in
+                        the list brackets, "[]", and set it equal to the item.
+                        Keep in mind you can overwrite already existing items
+                        this way.
+                    </li>
+                    <li>Removing items from the list uses the keyword "delete"
+                        infront of the list, then stating which item you want 
+                        removed: delete list[3];
+                    </li>
+                    <li>Destructuring an aray alows you to create multiple variables
+                        using an aray: let [x,y] = [1,2];
+                    </li>
+                </ol>
+            </li>
+            <li>If statments are created using the words if, else if, and else, ending
+                with "{}" with the code inside.
+            </li>
+            <li>Switch operators are used to test conditions. There are 4 key words:
+                <ol type="1">
+                    <li>switch - starts the statement and accepts what is being checked:
+                        switch (variable){}
+                    </li>
+                    <li>case - located inside the switch brackets and checks if the switch
+                        parameter equals something: case "yes":
+                    </li>
+                    <li>break - ends the statement</li>
+                    <li>default - if no criteria is met. This is usually found at the ending
+                        of the statement.
+                    </li>
+                </ol>
+            </li>
+            <li>While loops will repete code until while a condition is met: while (condition){}</li>
+            <li>do...while loops will start the code before checking for the condition: do {} while (condition)</li>
+            <li>For loops will repet code untill a condition is satisfied: 
+                for (initialization; condition; after) {}
+            </li>
+        </div>
     </body>
 
 </html>
