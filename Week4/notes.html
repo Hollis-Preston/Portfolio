@@ -9,10 +9,69 @@
     
     <body>
         <h1>Notes</h1>
-        <h2>Topic Title</h2>
-        <p>
-            This is where the reading notes will go.
-        </p>
+        <h2>Ch 8: Forms</h2>
+        <h3>Form controls</h3>
+        <div>
+            <p>forms are made up of 'form' elements. Forms contain controls such as
+                input fields, select menus and buttons. Of these we can submit it 
+                serverside where the information would be processed. 
+            </p>
+        </div>
+        <h3>Accessing Form Elements</h3>
+        <div>
+            <p>
+                Forms can be accessed in javascript using document.forms[#]. Every form
+                gets colected into this list in the order they appear in the markup. However,
+                it may be eaiser to use the forms name rather than to know their order number.
+                document.forms['name']. Keep in mind that these forms are set into variables.
+            </p>
+        </div>
+        <h3>Form Properties and Methods</h3>
+        <div>
+            <li>form.submit() method submits the form automatically.</li>
+            <li>type='submit' attribute on a button or input requires manual submission.</li>
+            <li>form.reset() method resets all from controls back to their initial values.
+                This can also be done with a button that has a type='reset' attribute. However,
+                reset buttons are fround uppon
+            </li>
+            <li>form.action = '/an/other.url' sends the information to a different URL to be processed.</li>
+        </div>
+        <h2>ch 12: Object-Oriented Programming in JavaScript</h2>
+        <div>
+            <p>OOP is made up of three concepts:</p>
+            <li>Encapsulation-The user can eaisly run the program without needing to know the "inner workings of the code."</li>
+            <li>Polymorphism-Each object function in the same way and can be compatable with other code.</li>
+            <li>Inheritance-Instead of creating something similar to an already existing object, implemet it 
+                into you new code.
+            </li>
+        </div>
+        <h3>Constructor functions</h3>
+        <div>
+            <p>A function that defines the properties and methods of an object. It implements the keyword 'this'
+                to signify that the variable will be returned by the constructor function. This function will be
+                used for the constructor property, which all objects have.
+            </p>
+        </div>
+        <h3>Static Methods</h3>
+        <div>
+            <p>
+                If you put the word 'static' infront of the function, it allows you to call it from the class directly
+                rather than by instances of the class. However, these functions are not available to instances of the
+                class.
+            </p>
+        </div>
+        <h3>Prototype</h3>
+        <div>
+            <p>This is a handy way for accessing and/or changing properties and functions in a class.</p>
+            <li>class.prototype.variable = 'value' - Sets its variable value.</li>
+            <li>class.prototype.function = function(){code} - Sets its function.</li>
+            <li>Object.getPrototypeOf(object_name) - Finds the prototype of an object.</li>
+            <li>class.prototype.isPrototypeOf(object_name) - returns a boolean to check if its the prototype of
+                an instance
+            </li>
+            <li>object_name.hasOwnProperty('') - checks to see if an attribute is unique or inherited.</li>
+            <li></li>
+        </div>
     </body>
 
 </html>
