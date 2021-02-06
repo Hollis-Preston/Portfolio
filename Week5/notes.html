@@ -9,10 +9,48 @@
     
     <body>
         <h1>Notes</h1>
-        <h2>Topic Title</h2>
-        <p>
-            This is where the reading notes will go.
-        </p>
+        <h2>Ch 10: Testing and Debugging</h2>
+        <h3>Errors</h3>
+        <div>
+            <li>System error: there's a problem with the system or external decices with which the program is interacting.</li>
+            <li>Programmer error: the program contains incorrect syntax or faulty logic.</li>
+            <li>User error: the user has entered data incorrectly, which the program is unable to use.</li>
+        </div>
+        <h3>Exceptions</h3>
+        <div>
+            <p>An error that produces a return value that can be used by the program to deal with the error.
+                A Stack trace also alows the program know where the error occured.
+            </p>
+        </div>
+        <h3>Warnings</h3>
+        <div>
+            <p>Wasrnings occure if there is an error in the code but is not enough to cause the program to fail.</p>
+        </div>
+        <h3>'use strict'</h3>
+        <div>
+            <p>Strict mode produces more exceptions and warnings and prohibits the use of some deprecated features.
+                Not using strict mode is often referred to as 'sloppy mode'.
+            </p>
+            <li>To implement strict mode, simply use the string 'use strict'; on the first line in your javaScript code.</li>
+        </div>
+        <h3>alert()</h3>
+        <div>
+            <p>Alert stops a program from runing untill OK is clicked which allows us to effectively put breakpoints in
+                the code that allows us to see any message/variables we want.
+            </p>
+        </div>
+        <h3>console</h3>
+        <div>
+            <p>Console provides a number of methods for logging information and debugging. However, alert()
+                is recomended over this.
+            </p>
+        </div>
+        <h3>try, catch, finally</h3>
+        <div>
+            <li>try: try running on the following program</li>
+            <li>catch: If the program had issues running, report an error and run any listed code.</li>
+            <li>finally: runs code regardless of whether an exception occurred or not.</li>
+        </div>
     </body>
 
 </html>
