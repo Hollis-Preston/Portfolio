@@ -8,11 +8,65 @@
     </head>
     
     <body>
-        <h1>Notes</h1>
-        <h2>Topic Title</h2>
-        <p>
-            This is where the reading notes will go.
-        </p>
+        <h1>Notes:</h1>
+
+        <h2>Ch. 11: Further Functions</h2>
+        <h3>Function Properties and Methods</h3>
+        <div>
+            <li>function.length - returns the number pr parameters the function has.</li>
+            <li>function.call(object) - incokes the function, providing each object as an argument</li>
+            <li>function.apply(null, [#]) - the arguments of the function are provided as an array</li>
+            <p>You can create custom properties:</p>
+            <li>function.description = 'This is the description of the function'</li>
+        </div>
+        <h3>Invoked function expressions</h3>
+        <div>
+            <p>An anonymous function that is invoked as soon as it's defined. This is achieved by placing parentheses
+                at the end of the function definition.
+            </p>
+            <li>(function(){code})();</li>
+        </div>
+        <h3>Self-defining functions</h3>
+        <div>
+            <p>The ability for the function to not anly call itself, but define itself, and even redefineitself.
+                This is done by assigning an anonymous function to a variable that has the same name as the function.
+            </p>
+            <li>function name(){code; name = function(){code}}</li>
+            <p>This will run whatever code it contains the run the code of the function withen the next few times
+                the function is called.
+            </p>
+        </div>
+        <h3>Recursive functions</h3>
+        <div>
+            <p>A function that invokes itself until a certain condition is met.</p>
+            <li>function name(x){if(x===0){return 1} else{return name(x-1)} }</li>
+        </div>
+        <h3>Callbacks</h3>
+        <div>
+            <p>Functions passed to other functions as arguments and then invoked inside the function they are passed to.</p>
+        </div>
+        <h3>Promises</h3>
+        <div>
+            <p>Represents the future result of an asynchronous operation.</p>
+        </div>
+        
+        <h2>Ch. 13: AJAX</h2>
+        <h3>Clients and servers</h3>
+        <div>
+            <li>Client - Requests a resource frim a server, which processes the request and sends back a response
+                to the client.
+            </li>
+            <li>Server - required when requesting resources using Ajax. Typically this involves using a server-side language
+                such as PHP.
+            </li>
+        </div>
+        <h3>Communicating with the server using the Fetch API</h3>
+        <div>
+            <p>Provides a golbal fetch() method that only has one mandatory argument, which is the URL
+                of the resource you wish to fetch.
+            </p>
+            <li>fetch('https://example.com/data').then(code tha handles the responce).catch(code tha runs if the server returs an error)</li>
+        </div>
     </body>
 
 </html>
