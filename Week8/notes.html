@@ -9,10 +9,53 @@
     
     <body>
         <h1>Notes</h1>
-        <h2>Topic Title</h2>
-        <p>
-            This is where the reading notes will go.
-        </p>
+        <h2>Chapter 8: Transforms and Transitions</h2>
+        <div>
+            <h3>Transforms</h3>
+            <p>the transform property lets you translate, rotate, scale, and/or skew any element on the page.
+                This gives you uprecedented controll over many more aspects of the elements appearance then 
+                possible in CSS.
+            </p>
+            <li>transform: translate(x, y)-This function allows you to shift elements on the x or y axis.</li>
+            <li>transform: scale(x, y)-Scales an element by the defined factors horizontally the vertically.</li>
+            <li>transform: rotate(deg)-rotates an element around the point of orgin by a specified angle.</li>
+            <li>transform: skew(x_deg, y_deg)- apecifies a skew along the x and y axes.</li>
+            <li></li>
+        </div>
+        <div>
+            <h3>Transitions</h3>
+            <p>Animation. While it can be done trhough javaScript, native CSS transitions generally require less
+                client-side processing and appear smoother.
+            </p>
+            <li>transition-property: transform</li>
+            <li>transition-duration: 0.2s-Sets how long the transition will take.</li>
+            <li>transition-timing-function: command-Lets you controll the pace of the transition in even 
+                more granular detail.
+            </li>
+            <p>commandes include: ease, linear, ease-in, ease-out, ease-in-out, steps(#, start/end)</p>
+            <li>transition-delay: time-Introduces a delay before the transition begins.</li>            
+        </div>
+        <h2>Chapter 12: Canvas, SVG, and Drag and Drop</h2>
+        <div>
+            <h3>Canvas</h3>
+            <p>An aplication that allows the programmer to create their own images in javaScript, improving the
+                performance of the websight by avoiding the need to download images of the network.
+            </p>
+            <xmp><canvas></canvas></xmp>
+        </div>
+        <div>
+            <h3>SVG</h3>
+            <p>Similar to canvas, but allows you to better access and change specific aspects of you graphics.</p>
+            <xmp><svg></svg></xmp>
+        </div>
+        <div>
+            <h3>Drag and Drop</h3>
+            <p>An API that allows user interaction with certain elements on the page.</p>
+            <xmp><element draggable="true"></element> - makes an element dragable</xmp>
+            <xmp>.addEventListener('dragstart', function (event) {//handle the dragstart event}) - tells
+                the signt when element can be draged.
+            </xmp>
+        </div>
     </body>
 
 </html>
