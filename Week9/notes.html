@@ -9,10 +9,79 @@
     
     <body>
         <h1>Notes</h1>
-        <h2>Topic Title</h2>
-        <p>
-            This is where the reading notes will go.
-        </p>
+        <h2>Chapter 09: The Window Object</h2>
+        <h3>The Browser Object Model</h3>
+        <div>
+            <p>BOM is a collection of properties and methods that contain information abou the browser and
+                computer screen.
+            </p>
+            <p>BOM only makes sence to run in a browser environment</p>
+            <li>window.variable - In a browser encironment, the global object is the window object.</li>
+            <li>Number.parseInt(#) - makes a decimal into an int</li>
+            <li>Number.isNaN(#) - checks to see if number is int or not.</li>
+            <li>alert(), confirm(), and prompt() are not part of the ECMAScript standard, although all major
+                browers support them as methods of the window. object: window.alert().
+            </li>
+        </div>
+        <h3>Finding out browser information</h3>
+        <div>
+            <p>The window object has a number of properties and methods that provide information about the user's
+                browser.
+            </p>
+            <p>The window object has a navigator property that returns a reference to the Navigator object. 
+                The Navigator object contains information about the browser being used. Its userAgent property
+                will return information about the browser and operating system being used.
+            </p>
+            <li>window.location.hrf - returns the full URL as a string.</li>
+            <li>window.location.protocol - returns a string describing the protocol used (http, https, etc.)</li>
+            <li>window.location.host - returns a string describing the domain of the current URL and the port
+                number.
+            </li>
+            <li>window.location.hostname - returns a string describing the domain of the current URL.</li>
+            <li>window.location.port - returns a string describing the port number.</li>
+            <li>window.location.pathname - returns a string of the path that follows the domain.</li>
+            <li>window.location.search - returns a string that starts with a "?" followed by the query 
+                string parameters.</li>
+            <li>window.location.hash - returns a string that starts with a "#" followed by the fragment identifier.</li>
+            <li>window.location.origin - returns a string that shows the protocol and domain where the current page 
+                originated from</li>
+        </div>
+        <h3>Browser history</h3>
+        <div>
+            <li>window.history.lenght - shows how many pages have been visited before arriving at the 
+                current page.</li>
+            <li>window.history.go(#) - used to go to a specific page, where 0 is the current page.</li>
+            <li>window.history.forward()/back() - navigates forwards and backwards by one page respectively.</li>
+        </div>
+        <h3>Controlling windows</h3>
+        <li>window.open('URL', 'SitePoint', 'width=#, height=#, resizable=yes') - used to open a new window.</li>
+        <li>window.close() - closes a window</li>
+        <li>window.moveTo(#,#) - moves a window to an x,y location.</li>
+        <li>window.resizeTo(#,#) - resizes a window</li>
+        <li>window.screen.height/width - gives the height or width of the screen in pixels.</li>
+        <h3>Cookies</h3>
+        <div>
+            <p>Small filse that are saved locally on a user's computer. Alowes a webpage to remember things about
+                previous visits.
+            </p>
+            <li>document.cookie = 'key=value' - assigning a cookin in javaScript.</li>
+            <li>document.cookie: - reading cookies.</li>
+            <li>document.cookie = 'key=value; path=/' - any page in the root directory can read the cookie</li>
+            <li>document.cookie = 'key=value; domain=website.com' - same as above but with a domain name.</li>
+            <li>document.cookie = 'key=value; secure' - ensures its only transmitted over a secure HTTPS
+                network:
+            </li>
+            <li>document.cookie = 'key=list; expires=Thu, 01 Jan, 2021 00:00:01 MST' - deletes a cookie
+                at a given time. Can delete instently if the date is already past.
+            </li>
+        </div>
+        <h3>Timing functions</h3>
+        <div>
+            <li>window.setTimeout( () => alert("Times Up!"), 3000) - alerts after a certain amount of milliseconds</li>
+            <li>window.clearTimeout(#) - if the number given from the previous code is imputed, then the
+                alert is prevented.
+            </li>
+        </div>        
     </body>
 
 </html>
