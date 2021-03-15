@@ -9,10 +9,64 @@
     
     <body>
         <h1>Notes</h1>
-        <h2>Topic Title</h2>
-        <p>
-            This is where the reading notes will go.
-        </p>
+        <h2>Client-side form validation</h2>
+        <div>
+            <p>
+                An initail check and an important feature of good user experience. Alows the
+                user to fix the incalid data cought on the client-side straight away. 
+
+                This should not replace exhaustive security measures. You should always perform
+                security checks on any form-submitted data on the serer-side as well as the client-side.
+                client-side validation is too easy to bypass.
+            </p>
+            <h3>Form Validation</h3>
+            <p>
+                A check to see if the inputed data in a form is in the correct format and within the constraints
+                set by the applocation.
+            </p>
+            <li>* This field is required</li>
+            <li>Please enter you phone number in the format xxx-xxxx</li>
+            <li>Please enter a valid email address</li>
+            <li>Your password needs to be between 8 and 30 characters long and contain one uppercase letter, one
+                symbol, and a number.
+            </li>
+            <h3>Why validate forms?</h3>
+            <li>We want to get the right data in the right format</li>
+            <li>We want to protect our users' data</li>
+            <li>We want to protect ourselves.</li>
+            <h3>Types of Client-side Validation</h3>
+            <p>Form validation: uses HTML5 form validation features. Generally doesn't
+                require much JavaScript and has a better performance. Not as customizable.
+            </p>
+            <li>required: specifies whether a form field needs to be filled in before the form can
+                be submitted.
+            </li>
+            <li>minlength/maxlength: specifies the minimum and maximum length of textual data (strings)</li>
+            <li>min/max: specifies the minimum and maximum values of numerical input types.</li>
+            <li>type: specifies whether the data needs to be a number, email address, or some other
+                specific preset type.
+            </li>
+            <li>pattern: specifies a regular expression that defines a pattern the entered data needs to follow.</li>
+            <p>JavaScript: uses JavaScript and is completely customizable but you need to 
+                create it all.
+            </p>
+            <li>HTMLButtonElement</li>
+            <li>HTMLFieldSetEement</li>
+            <li>HTMLInputElement</li>
+            <li>HTMLOutputElement</li>
+            <li>HTMLSelectElement</li>
+            <li>HTMLTextAreaElement</li>
+        </div>
+        <h2>Using Fetch</h2>
+        <div>
+            <p>Provides a JavaScript interface for accessing and manipulating parts of the HTTP pipeline, 
+                such as requests and responses. it also provodes a global fetch() methoud that provides
+                 an easy logical way to fetch resources asynchronously across the network.
+            </p>
+            <li>See <a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch">link</a>
+                for examples.
+            </li>
+        </div>
     </body>
 
 </html>
