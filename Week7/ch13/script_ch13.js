@@ -102,5 +102,3 @@ const game = {
         view.teardown();
     }
 }
-view.start.addEventListener('click', () => game.start(quiz), false);
-view.response.addEventListener('click', (event) => game.check(event), false);
