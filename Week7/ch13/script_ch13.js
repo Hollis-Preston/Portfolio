@@ -1,4 +1,4 @@
-const url = 'http://spbooks.github.io/questions.json';
+const url = 'https://hollis-preston.github.io/Web-Frontend-Development-II/Week7/ch13/questions.json';
 fetch(url)
 .then(res => res.json())
 .then(quiz => {
